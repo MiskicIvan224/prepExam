@@ -1,4 +1,4 @@
-playlist = dict(Title = "Patagonia Bus", author = "Colt Steele", 
+"""playlist = dict(Title = "Patagonia Bus", author = "Colt Steele", 
                 
 				songs = [
                     dict(title = "song1", artist = ["Ivan"], duration = 2.5),
@@ -12,4 +12,14 @@ for durations in playlist["songs"]:
     duration_times = durations.get("duration")
     counter+=duration_times
 print(counter)
+   """\
    
+
+sett = set([123,456,123,789])
+
+for number in sett:
+    print(number,end=" ")
+
+list = sorted(sett)
+tupled = tuple(list)
+print(tupled)
