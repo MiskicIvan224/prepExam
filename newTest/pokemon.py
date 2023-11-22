@@ -55,7 +55,7 @@ def print_pack(pack):
     
     for value in sorted(dictionary.values()):
         
-        print(f"CARD{counter}:",value[0],value[1],value[2])
+        #print(f"CARD{counter}:",value[0],value[1],value[2])
         counter+=1
         if counter > 10:
             break
