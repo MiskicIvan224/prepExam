@@ -12,24 +12,23 @@ import random
 #with the sane tital does not matter. 
 
 
+
+
 def sort_key(a_tuple):
     
-    return a_tuple[0] + a_tuple[1]
+   return sum(a_tuple)
     
 def roll_dice(sides, roll_count):
-    dice = set()
-    for index in range(roll_count):
-        random_roll_1 = random.randint(1,sides)
-        random_roll_2 = random.randint(1,sides)
-        random_dice = (random_roll_1,random_roll_2)
-        dice.add(random_dice)
-        sorted_roll = sorted(dice,key=sort_key)
+    
+    sett = set()
+    for dice in range(roll_count):
+        radnom_roll1 = random.randint(1,sides)
+        radnom_roll2 = random.randint(1,sides)
+        dices = (radnom_roll1,radnom_roll2)
+        sett.add(dices)
+        sortedd = sorted(sett,key=sort_key)
+    return sortedd
 
-    return sorted_roll
-
-
-
-   
 def main():
 
     random.seed()
